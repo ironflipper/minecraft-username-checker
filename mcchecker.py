@@ -17,6 +17,7 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+os.system('cls')
 print()
 print("How many letters should the generated usernames have? (At least 3!)")
 letterz = input()
@@ -39,7 +40,7 @@ while True:
         f.write(name + "\n")
         f.close()
 
-        time.sleep(10)
+        time.sleep(5)
     elif str(response) == '<Response [429]>':
         print(bcolors.OKRED)
         print(response)
